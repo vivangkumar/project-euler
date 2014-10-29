@@ -1,4 +1,4 @@
-__author__ = 'vivan'
+__author__ = 'Vivan'
 
 '''
 Problem 1: If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3,5,6 and 9. The sum of these multiples is 23.
@@ -13,9 +13,9 @@ def multiples():
         # If remainder is 0, it means the numbers are divisible by 3 and 5 and are consequently multiples of 3 and 5.
         if(num % 3 == 0 or num % 5 == 0):
             sum += num
-    print(sum)
+    return sum
 
-multiples()
+print multiples()
 
 
 
