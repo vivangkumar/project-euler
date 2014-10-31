@@ -1,5 +1,6 @@
 __author__ = 'vivan'
 
+from operator import mul
 
 def generate_list():
     number_list = []
@@ -11,4 +12,17 @@ def generate_list():
 
     return number_list
 
-print generate_list()
+
+def calculate():
+    pos, number_list, prod, digit, result = 0, generate_list(), 1, [], []
+    for x in range(pos, len(number_list)):
+        if x - pos == 13:
+            if 0 not in number_list[pos: x]:
+                digit.append(number_list[pos: x])
+            pos += 1
+
+    for p in digit:
+        result.append(reduce(mul, p))
+    print max(result)
+
+calculate()
