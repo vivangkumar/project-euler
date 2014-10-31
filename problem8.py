@@ -1,4 +1,4 @@
-__author__ = 'vivan'
+__author__ = 'Vivan'
 
 from operator import mul
 
