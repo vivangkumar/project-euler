@@ -1,11 +1,20 @@
 __author__ = 'Vivan'
 
+'''
+a = m^2 - n^2
+b = 2nm
+c = m^2 + n^2
+where m < n
+'''
+
 def pythagorean_triplet():
-    a, b, result = 0, 0, []
-    for c in range(1, 1000):
-        if c - 2 > 0:
-            a = c - 2
-            b = c - 1
-            print a, b, c
+    for m in range(1, 300):
+        for n in range(2, 300):
+            a = m*m - n*n
+            b = 2 * m * n
+            c = m*m + n*n
+
+            if(a + b + c) == 1000:
+                print a * b * c
 
 pythagorean_triplet()
